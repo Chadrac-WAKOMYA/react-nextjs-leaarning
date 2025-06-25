@@ -1,14 +1,14 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 
-const Test = () => {
-  return <div>Bonjour</div>
+const Test = () => {  
+  return <h2>Je suis de retour</h2>
 }
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <>
+    <h1>Bonjour tout le monde</h1>
+    <Test />
+  </>
 )
+
