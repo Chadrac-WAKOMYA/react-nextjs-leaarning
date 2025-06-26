@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 
 const Welcome = () => {
-  const nom = "Chadrac"; // Vous pouvez changer le nom pour tester
+  const nom = "Luc"; // Vous pouvez changer le nom pour tester
   return <>
     <h2>Bienvenue dans mon application cher {nom === "Chadrac" ? "Invité" : "Inconnu"}</h2>
   </>
