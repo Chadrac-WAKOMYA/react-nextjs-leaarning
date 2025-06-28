@@ -4,7 +4,7 @@ import './index.css'
 const Welcome = () => {
   const nom = "Luc"; // Vous pouvez changer le nom pour tester
   return <>
-    <h2>Bienvenue dans mon application cher {nom == "Chadrac" ? "Invité" : "Inconnu"}</h2>
+    {/* <h2>Bienvenue dans mon application cher {nom == "Chadrac" ? "Invité" : "Inconnu"}</h2> */}
   </>
 }
 const Test = () => {  
