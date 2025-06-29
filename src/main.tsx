@@ -12,8 +12,8 @@ const Test = () => {
 }
 
 createRoot(document.getElementById('root')!).render(
-  <>
-    <Welcome />
-  </>
+  // <>
+  //   <Welcome />
+  // </>
 )
 
