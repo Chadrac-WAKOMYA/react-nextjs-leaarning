@@ -23,6 +23,9 @@ const Test = () => {
 
 createRoot(document.getElementById('root')!).render(
   <>
+    <Welcome/>
+    {h2}
+    <Test />
     <App />
   </>
 )
