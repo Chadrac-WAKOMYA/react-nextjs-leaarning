@@ -18,8 +18,8 @@ export default App
 type SalutationProps = {
   name: string;
 }
-const Salutation = (props: SalutationProps) => {
+const Salutation = ({name}: SalutationProps) => {
   return (
-    <h2>Bonjour, {props.name}</h2>
+    <h2>Bonjour, {name}</h2>
   );
 }
