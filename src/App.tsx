@@ -3,8 +3,12 @@ import './App.css'
 function App() {
 
   return (
-    <>
+    <>      
       <h1>Je suis le composant principal</h1>
+      <Container title="Container d'éléments">
+        <p>Je suis un paragraphe dans le composant Container</p>
+        <h3>Je suis un test h3 dans le composant Container</h3>
+      </Container>
       <Salutation name="Chadrac" age={16}/>
       <Salutation name="Wakomya" />
       <Salutation name="Kighundila" />
@@ -25,12 +29,7 @@ const Salutation = ({name, age}: SalutationProps) => {
       <h2>
         Bonjour, {name}
         {typeof age === "number" && age < 18 ? ", mineur" : "Majeur"}
-      </h2>
-      <Container title="Mon titre">
-        <p>Je suis un paragraphe dans le composant Salutation</p>
-        <h3>Je suis un test h3 dans le composant Container</h3>
-      </Container>
-
+      </h2>   
     </>
   );
 }
@@ -45,6 +44,7 @@ const Container = ({children, title} : ContainerProps) => {
       backgroundColor: 'grey',
       color : 'blue',
     }}>
+      <h1>{title}</h1>
       {children}
     </div>
   );
