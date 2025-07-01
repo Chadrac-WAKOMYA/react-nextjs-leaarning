@@ -1,8 +1,10 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import React from 'react';
 
 const nom: string = "Chadrac";
 const age: number = 12;
+
 const Welcome = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const Welcome = () => {
   );
 };
 
+const h2 = React.createElement('h2', null, 'Bonjour avec du react sans JSX');
+
 const Test = () => {  
   return (<h2>Nous sommes de retour</h2>);
 }
@@ -19,6 +23,8 @@ const Test = () => {
 createRoot(document.getElementById('root')!).render(
   <>
     <Welcome />
+    <Test />
+    {h2}
   </>
 )
 
