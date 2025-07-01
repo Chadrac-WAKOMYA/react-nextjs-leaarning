@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import React from 'react';
+import App from './App';
 
 const nom: string = "Chadrac";
 const age: number = 12;
@@ -22,9 +23,7 @@ const Test = () => {
 
 createRoot(document.getElementById('root')!).render(
   <>
-    <Welcome />
-    <Test />
-    {h2}
+    <App />
   </>
 )
 
