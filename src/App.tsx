@@ -1,4 +1,5 @@
 import './App.css'
+import Salutation from './components/Salutation';
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       </Container>
       <Salutation name="Chadrac" age={16}/>
       <Salutation name="Wakomya" />
-      <Salutation name="Kighundila" />
+      {/* <Salutation name="Kighundila" /> */}
     </>
     
   );
@@ -19,20 +20,8 @@ function App() {
 
 export default App
 
-type SalutationProps = {
-  name: string;
-  age?: number; // age is optional
-}
-const Salutation = ({name, age}: SalutationProps) => {
-  return (
-    <>    
-      <h2>
-        Bonjour, {name}
-        {typeof age === "number" && age < 18 ? ", mineur" : "Majeur"}
-      </h2>   
-    </>
-  );
-}
+
+
 
 type ContainerProps = {
   children: React.ReactNode;
