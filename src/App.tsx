@@ -1,11 +1,14 @@
 import './App.css'
 import Container from './components/Container';
+import Liste from './components/Liste';
 import Salutation from './components/Salutation';
+import Welcome from './components/Welcome';
 
 function App() {
 
   return (
-    <>      
+    <>    
+      <Welcome/>  
       <h1>Je suis le composant principal</h1>
       <Container title="Container d'éléments">
         <p>Je suis un paragraphe dans le composant Container</p>
@@ -15,6 +18,7 @@ function App() {
       <Salutation name="Wakomya" />
       <Salutation name="Kighundila" />
       <h1>Je rends une liste</h1>
+      <Liste/>
     </>
     
   );
