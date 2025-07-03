@@ -1,4 +1,5 @@
 import './App.css'
+import Container from './components/Container';
 import Salutation from './components/Salutation';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       </Container>
       <Salutation name="Chadrac" age={16}/>
       <Salutation name="Wakomya" />
-      {/* <Salutation name="Kighundila" /> */}
+      <Salutation name="Kighundila" />
+      <h1>Je rends une liste</h1>
     </>
     
   );
@@ -23,18 +25,4 @@ export default App
 
 
 
-type ContainerProps = {
-  children: React.ReactNode;
-  title?: string;
-}
-const Container = ({children, title} : ContainerProps) => {
-  return (
-    <div style={{
-      backgroundColor: 'grey',
-      color : 'blue',
-    }}>
-      <h1>{title}</h1>
-      {children}
-    </div>
-  );
-}
+
