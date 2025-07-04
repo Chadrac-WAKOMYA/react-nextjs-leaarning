@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import  { PureComponent } from 'react'
 
 type Props = {}
 
@@ -14,7 +14,7 @@ export default class Liste extends PureComponent<Props> {
         {
             users.map((user) => (
                 <div style={{padding: '10px', border: '1px solid black', margin: '5px'}} key={user.id}>
-                    <p>{user.name}---{user.age}</p>
+                    {/* <p>{user.name}---{user.age}</p> */}
                 </div>
             ))
         }
