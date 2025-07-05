@@ -6,8 +6,8 @@ export default class Liste extends PureComponent<Props> {
   render() {
     const users = [
           { id: 1, name: 'Chadrac', age: 16 },
-          { id: 2, name: 'Wakomya', age: 20 },
-          { id: 3, name: 'Kighundila', age: 18 },
+        //   { id: 2, name: 'Wakomya', age: 20 },
+        //   { id: 3, name: 'Kighundila', age: 18 },
         ];
     return (
       <>
