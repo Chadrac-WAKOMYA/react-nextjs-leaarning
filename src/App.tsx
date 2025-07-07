@@ -20,6 +20,10 @@ function App() {
       <Salutation name="Kighundila" />
       <h1>Je rends une liste</h1>
       <Liste/>
+      <h1>Les événements en React <br/></h1>
+      <Compteur/>
+      <Compteur/>
+      <Compteur/>
       <Compteur/>
     </>
     
