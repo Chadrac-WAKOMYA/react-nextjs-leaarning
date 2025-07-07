@@ -1,4 +1,5 @@
 import './App.css'
+import Compteur from './components/Compteur';
 import Container from './components/Container';
 import Liste from './components/Liste';
 import Salutation from './components/Salutation';
@@ -19,6 +20,7 @@ function App() {
       <Salutation name="Kighundila" />
       <h1>Je rends une liste</h1>
       <Liste/>
+      <Compteur/>
     </>
     
   );

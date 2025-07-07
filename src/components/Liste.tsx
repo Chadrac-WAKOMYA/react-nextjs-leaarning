@@ -14,7 +14,7 @@ export default class Liste extends PureComponent<Props> {
       <>
         {
             users.map((user) => (
-                <CarteUtilisateur user={user} />
+                <CarteUtilisateur user={user} key={user.id}/>
             ))
         }
       </>
