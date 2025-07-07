@@ -9,13 +9,22 @@ export default function Compteur({}: Props) {
     }
 
     const handleDecrement = () => {        
-        setCount(count + 1); 
+        setCount(count - 1); 
     }
     return (
-        <div>
-            <h1>Les événements en React</h1>
-            <h3>Nombre de fois : {count}</h3>
-            <button onClick={handleIncrement}>Incrémenter</button>
-        </div>        
+        <>
+            <h1>Les événements en React <br/></h1>
+            <div
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',                 
+                }}
+            >        
+                <button onClick={handleDecrement} style={{margin : 10}}>-</button>
+                <h3 > Nombre de fois : {count}</h3>
+                <button onClick={handleIncrement}style={{margin : 10}}>+</button>
+            </div>   
+        </>             
     )
 }
