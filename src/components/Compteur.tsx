@@ -1,12 +1,11 @@
-import React from 'react'
-
+import {useState} from 'react';
 type Props = {}
 
 export default function Compteur({}: Props) {
-    let count = 0;
+    const [count, setCount] = useState(0);
     const handleClick = () => {        
-        count++; 
-        console.log('Incrémentation du compteur');
+        setCount(count + 1); 
+        console.log('La valeur du compteur est :', count+1);
     }
     return (
         <div>
