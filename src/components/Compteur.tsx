@@ -11,8 +11,7 @@ export default function Compteur({}: Props) {
     const handleDecrement = () => {        
         setCount(count - 1); 
     }
-    return (      
-           
+    return (                 
         <div
             style={{
                 display: 'flex',
@@ -23,7 +22,6 @@ export default function Compteur({}: Props) {
             <button onClick={handleDecrement} style={{margin : 10}}>-</button>
             <h3 > Nombre de fois : {count}</h3>
             <button onClick={handleIncrement}style={{margin : 10}}>+</button>
-        </div>   
-                   
+        </div>               
     )
 }
