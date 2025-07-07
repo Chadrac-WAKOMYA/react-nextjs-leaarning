@@ -3,15 +3,16 @@ import React from 'react'
 type Props = {}
 
 export default function Compteur({}: Props) {
-    const handleClick = () => {
+    let count = 0;
+    const handleClick = () => {        
+        count++; 
         console.log('Incrémentation du compteur');
     }
     return (
         <div>
             <h1>Les événements en React</h1>
-            <h3>Nombre de fois : 0</h3>
+            <h3>Nombre de fois : {count}</h3>
             <button onClick={handleClick}>Incrémenter</button>
-        </div>
-        
+        </div>        
     )
 }
